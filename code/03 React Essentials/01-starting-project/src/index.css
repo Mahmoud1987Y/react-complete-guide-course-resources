@@ -19,7 +19,6 @@ html {
   min-height: 80rem;
 }
 
-
 main {
   width: 90%;
   max-width: 50rem;
@@ -81,6 +80,7 @@ main h2 {
   margin: 1rem 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   gap: 0.5rem;
   list-style: none;
 }
@@ -108,10 +108,13 @@ main h2 {
 }
 
 #tab-content {
+  width: 50%;
+  min-height: 150px;
   padding: 1rem;
   border-radius: 6px;
   background-color: #2f1d43;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
 }
 
 #tab-content h3 {
