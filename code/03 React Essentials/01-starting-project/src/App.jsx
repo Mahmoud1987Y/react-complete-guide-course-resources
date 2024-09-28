@@ -1,14 +1,28 @@
+import Header from "./Header/Header";
+import ReactCard from "./ReactCard/ReactCard";
+import { CORE_CONCEPTS } from "./data";
+
 function App() {
   return (
     <div>
-      <header>
-        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-        <h1>React Essentials</h1>
-        <p>
-          Fundamental React concepts you will need for almost any app you are
-          going to build!
-        </p>
-      </header>
+      <Header />
+      <div id="core-concepts">
+        <ul>
+          <li>
+            <ReactCard {...CORE_CONCEPTS[0]} />
+          </li>
+          <li>
+            <ReactCard {...CORE_CONCEPTS[1]} />
+          </li>
+          <li>
+            <ReactCard {...CORE_CONCEPTS[2]} />
+          </li>
+          <li>
+            {" "}
+            <ReactCard {...CORE_CONCEPTS[3]} />
+          </li>
+        </ul>
+      </div>
       <main>
         <h2>Time to get started!</h2>
       </main>
